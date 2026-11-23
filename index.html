@@ -54,6 +54,12 @@ i{font-style:normal}
 .sec--navy .lead{color:#e9e3d6}
 .orn{display:block;width:120px;height:14px;margin:16px auto 0}
 
+/* ---- ロゴ(トップへ) ---- */
+.site{background:var(--paper);text-align:center;border-bottom:2px solid var(--gold)}
+.site a{display:inline-block;padding:16px 20px;text-decoration:none}
+.site img{width:220px;height:auto}
+.site--foot{padding:6px 0 96px;border:0;border-top:2px solid var(--gold)}
+.site--foot span{display:block;margin-top:8px;font-weight:700;font-size:15px;color:var(--ink2);letter-spacing:.08em}
 /* ---- FV ---- */
 .fv{position:relative;background:linear-gradient(#0b1838,#13244d 60%,#0d1b3d);color:#fff;text-align:center;overflow:hidden;padding:0 0 44px}
 .lights{display:block;width:100%;height:56px}
@@ -195,10 +201,10 @@ i{font-style:normal}
 .notes li{padding-left:1em;text-indent:-1em}
 .notes li::before{content:"※"}
 
-.end{position:relative;padding:64px 28px 120px;background:linear-gradient(#13244d,#0b1633);color:#fff;text-align:center}
+.end{position:relative;padding:64px 28px 64px;background:linear-gradient(#13244d,#0b1633);color:#fff;text-align:center}
 .end .h2{color:#fff}
 .end__img{width:calc(100% + 56px);max-width:none;margin:24px -28px 8px;-webkit-mask:linear-gradient(transparent,#000 12%,#000 88%,transparent);mask:linear-gradient(transparent,#000 12%,#000 88%,transparent)}
-@media (max-width:600px){.end__img{width:calc(100% + 40px);margin:20px -20px 8px}}
+@media (max-width:600px){.site img{width:190px}.end__img{width:calc(100% + 40px);margin:20px -20px 8px}}
 
 /* ---- レール(PC) ---- */
 .rail{position:fixed;top:0;bottom:0;width:var(--rail);z-index:3;color:#fff;display:none;flex-direction:column;justify-content:center;padding:28px 26px}
@@ -237,7 +243,7 @@ i{font-style:normal}
 @media (min-width:1180px){
   .rail{display:flex}
   .menubtn,.drawer,.bar{display:none}
-  .end{padding-bottom:72px}
+  .site--foot{padding-bottom:16px}
 }
 @media (max-width:600px){
   .sec{padding:52px 20px}
@@ -267,6 +273,11 @@ i{font-style:normal}
   .pair__cap{font-size:19px}
   .open__img{margin:24px -20px 0}
   .blend__name{font-size:28px}
+}
+@media (max-width:390px){
+  .ticket .off{font-size:80px}
+  .fv__cpn .off{font-size:76px}
+  .btn{font-size:19px;letter-spacing:.04em}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
@@ -307,6 +318,7 @@ i{font-style:normal}
 </nav>
 
 <main class="main">
+  <div class="site"><a href="https://www.rakuten.co.jp/sawaicoffee-tea/" target="_top"><img src="img/logo.png" width="548" height="64" alt="澤井珈琲 トップページへ"></a></div>
 
   <!-- FV -->
   <header class="fv" id="top">
@@ -349,7 +361,7 @@ i{font-style:normal}
       <p class="ticket__cpn">クーポン</p>
       <div class="calc">
         <p class="calc__row">3,500円 × 2セット ＝ <s>7,000</s>円</p>
-        <p class="calc__after">クーポン利用で <b>6,000</b><i>円</i></p>
+        <p class="calc__after">クーポン利用で <span class="nw"><b>6,000</b><i>円</i></span></p>
         <p class="calc__each">1セットあたり <b>3,000</b>円</p>
       </div>
     </div>
@@ -584,6 +596,8 @@ i{font-style:normal}
     <a class="btn btn--gold" data-coupon href="#">クーポンを獲得する</a>
     <a class="btn btn--line" data-item href="#">商品ページで2セット選ぶ</a>
   </footer>
+  <div class="site site--foot"><a href="https://www.rakuten.co.jp/sawaicoffee-tea/" target="_top"><img src="img/logo.png" width="548" height="64" alt="澤井珈琲 トップページへ" loading="lazy"><span>澤井珈琲のトップページへ</span></a></div>
+
 </main>
 
 <div class="bar" data-bar>
