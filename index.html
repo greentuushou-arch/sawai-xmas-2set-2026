@@ -72,9 +72,14 @@ i{font-style:normal}
 .fv__cpn .off{font-size:104px;margin-top:6px}
 .fv__cpn .off__u .y,.fv__cpn .off__u .o{color:var(--red)}
 .fv__cpn-ttl{font-family:var(--sans);font-weight:900;font-size:36px;letter-spacing:.06em;margin-left:.15em;vertical-align:.08em}
-.fv__term{margin:20px 24px 0;font-family:var(--num);font-weight:500;font-size:22px;letter-spacing:.04em;color:#fff;line-height:1.5}
-.fv__term small{display:block;font-family:var(--sans);font-size:15px;color:var(--gold-l);letter-spacing:.16em}
-.fv__term i{font-family:var(--sans);font-size:15px;margin:0 .1em}
+.period{margin:6px 24px 0;padding:0 0 18px;border-bottom:1px solid #d2b07277}
+.period__lbl{display:inline-block;padding:4px 18px;background:var(--red);color:#fff;font-weight:900;font-size:20px;letter-spacing:.14em;line-height:1.5}
+.period__d{display:flex;justify-content:center;align-items:center;gap:14px;margin-top:12px;line-height:1}
+.period__day{display:grid;grid-template-columns:auto auto;align-items:center;column-gap:6px;row-gap:8px}
+.period__day b{font-family:var(--num);font-weight:600;font-size:64px;letter-spacing:-.01em;color:#fff}
+.period__day i{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--gold);color:var(--night);font-weight:900;font-size:17px}
+.period__day em{grid-column:1/-1;justify-self:center;font-style:normal;font-family:var(--num);font-weight:500;font-size:22px;letter-spacing:.06em;color:var(--gold-l)}
+.period__to{font-family:var(--num);font-size:34px;color:var(--gold);padding-bottom:26px}
 
 /* ---- クーポン札 ---- */
 .cpn{background:var(--red);background:radial-gradient(circle at 50% 0,#c23240,#8e1b25 70%);color:#fff;padding-bottom:64px}
@@ -228,7 +233,14 @@ i{font-style:normal}
   .fv__cpn .off{font-size:84px}
   .fv__cpn-ttl{font-size:30px}
   .fv__cpn-pre{font-size:21px}.fv__cpn-pre b{font-size:34px}
-  .fv__term{font-size:20px}
+  .period{margin:4px 14px 0}
+  .period__lbl{font-size:18px}
+  .period__d{gap:6px}
+  .period__day{column-gap:4px}
+  .period__day b{font-size:46px}
+  .period__day i{width:26px;height:26px;font-size:15px}
+  .period__day em{font-size:18px;letter-spacing:.02em}
+  .period__to{font-size:26px;padding-bottom:22px}
   .ticket{padding:40px 16px 30px}
   .status{font-size:20px;padding:6px 14px;letter-spacing:.04em}
   .ticket .off{font-size:92px}
@@ -296,6 +308,14 @@ i{font-style:normal}
         <circle class="bulb" cx="560" cy="27" r="6" fill="#c8323e"/><circle class="bulb" cx="600" cy="20" r="6" fill="#3d8c5c"/>
       </g>
     </svg>
+    <div class="period">
+      <p class="period__lbl">7日間だけの期間限定</p>
+      <p class="period__d">
+        <span class="period__day"><b>11/24</b><i>火</i><em>10:00から</em></span>
+        <span class="period__to" aria-label="から">〜</span>
+        <span class="period__day"><b>11/30</b><i>月</i><em>23:59まで</em></span>
+      </p>
+    </div>
     <p class="fv__shop">澤井珈琲のクリスマス限定ギフト</p>
     <h1 class="fv__ttl"><span>1冊は<em>聖夜</em>に</span><span>1冊は<em>ご挨拶</em>に</span></h1>
     <div class="fv__img"><img src="img/fv-box.jpg" width="1000" height="1000" alt="ブック型の箱に入ったクリスマス限定ドリップバッグコーヒーギフト"></div>
@@ -303,7 +323,6 @@ i{font-style:normal}
       <p class="fv__cpn-pre">ブック型ギフトを<b>2</b>セットで</p>
       <span class="off"><b>1,000</b><span class="off__u"><i class="y">円</i><i class="o">OFF</i></span></span><span class="fv__cpn-ttl">クーポン</span>
     </div>
-    <p class="fv__term"><small>7日間限定</small>11/24<i>(火)</i>10:00 〜 11/30<i>(月)</i>23:59</p>
   </header>
 
   <!-- 01 クーポン -->
