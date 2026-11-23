@@ -173,6 +173,20 @@ i{font-style:normal}
 .about__img{margin-top:28px;border-radius:4px}
 .about__t{margin-top:16px;font-size:16px;color:#e4ddcf}
 
+
+/* ---- ラインナップ ---- */
+.lineup__h{display:flex;align-items:center;gap:14px;margin:40px 0 0;font-family:var(--min);font-weight:800;font-size:24px;letter-spacing:.1em;color:var(--red-d)}
+.lineup__h::before,.lineup__h::after{content:"";flex:1;height:1px;background:var(--gold)}
+.items{display:grid;grid-template-columns:repeat(3,1fr);gap:24px 14px;margin-top:22px}
+.item{display:block;text-decoration:none;color:var(--ink)}
+.item img{width:100%;aspect-ratio:1;border-radius:4px;transition:opacity .2s}
+.item:hover img{opacity:.85}
+.item__name{margin-top:10px;font-weight:700;font-size:15px;line-height:1.55;word-break:auto-phrase}
+.item__price{margin-top:4px;font-weight:700;font-size:16px;color:var(--red)}
+.item__price b{font-family:var(--num);font-weight:600;font-size:28px;margin-right:.05em}
+.lineup__note{margin-top:30px;font-size:15px;line-height:1.7;color:var(--ink2)}
+@media (max-width:600px){.items{grid-template-columns:1fr 1fr;gap:22px 12px}.item__price b{font-size:26px}.lineup__note br{display:none}}
+
 /* ---- 詳細 ---- */
 .spec{width:100%;margin-top:26px;border-collapse:collapse;font-size:16px;text-align:left}
 .spec th,.spec td{padding:12px 10px;border-bottom:1px solid #d9ccb2;vertical-align:top}
@@ -202,7 +216,7 @@ i{font-style:normal}
 .mini{background:var(--paper);color:var(--ink);padding:22px 14px 18px;border-radius:6px;outline:1px solid var(--gold);outline-offset:-7px}
 .mini__pre{font-family:var(--min);font-weight:800;font-size:18px;white-space:nowrap}
 .mini__pre b{font-family:var(--num);font-weight:600;font-size:30px;color:var(--red);vertical-align:-.05em}
-.mini .off{font-size:62px;color:var(--red);margin-top:4px}
+.mini .off{font-size:52px;color:var(--red);margin-top:4px;max-width:100%}
 .mini__cpn{font-weight:900;font-size:22px;color:var(--red)}
 .rail .cd__nums{font-size:34px}
 .rail .cd__nums i{font-size:15px;margin:0 3px 0 1px}
@@ -350,7 +364,7 @@ i{font-style:normal}
 
   <!-- 02 本棚 -->
   <section class="sec" id="shelf" data-title="2冊の贈り方">
-    <p class="kicker"><b>01</b>2冊の贈り方</p>
+    <p class="kicker"><b>02</b>2冊の贈り方</p>
     <h2 class="h2">2冊あると<br>贈り方がふえる</h2>
     <p class="lead">本のような箱だから、2冊並べると小さな本棚に。ひとつは手元に、ひとつは大切な人へ。</p>
     <div class="shelf">
@@ -379,7 +393,7 @@ i{font-style:normal}
 
   <!-- 03 箱をひらくと -->
   <section class="sec sec--navy" id="open" data-title="箱をひらくと">
-    <p class="kicker"><b>02</b>箱をひらくと</p>
+    <p class="kicker"><b>03</b>箱をひらくと</p>
     <h2 class="h2">ページをめくるように<br>24袋の聖夜</h2>
     <div class="open__img"><img src="img/open-box.jpg" width="1000" height="1000" alt="ブック型の箱を開くと3種のドリップバッグが24袋並ぶ" loading="lazy"></div>
     <div class="bags" data-bags aria-hidden="true"></div>
@@ -389,7 +403,7 @@ i{font-style:normal}
 
   <!-- 04 3つの味 -->
   <section class="sec sec--navy" id="blend" data-title="3つのブレンド" style="padding-top:20px">
-    <p class="kicker"><b>03</b>3つのブレンド</p>
+    <p class="kicker"><b>04</b>3つのブレンド</p>
     <h2 class="h2">その夜の気分で<br>選べる一杯</h2>
     <div class="blend">
       <img class="blend__img" src="img/pouch-yozora.jpg" width="310" height="410" alt="夜空の軌跡のドリップバッグ" loading="lazy">
@@ -419,7 +433,7 @@ i{font-style:normal}
 
   <!-- 05 贈る準備 -->
   <section class="sec sec--paper" id="ready" data-title="贈る準備">
-    <p class="kicker"><b>04</b>贈る準備</p>
+    <p class="kicker"><b>05</b>贈る準備</p>
     <h2 class="h2">手渡しも<br>お届けも気持ちよく</h2>
     <div class="ready">
       <img class="ready__img" src="img/handing.jpg" width="1000" height="1000" alt="ブック型のギフトを手渡すクリスマスの場面" loading="lazy">
@@ -440,7 +454,7 @@ i{font-style:normal}
 
   <!-- 06 声 -->
   <section class="sec" id="voice" data-title="いただいた声">
-    <p class="kicker"><b>05</b>いただいた声</p>
+    <p class="kicker"><b>06</b>いただいた声</p>
     <h2 class="h2">渡したときの<br>笑顔が届いています</h2>
     <div class="stars">
       <svg viewBox="0 0 150 28" aria-hidden="true"><g fill="#b98d3e"><path id="st" d="M14 1l3.6 8.2 8.9.8-6.8 5.9 2 8.7L14 20l-7.7 4.6 2-8.7L1.5 10l8.9-.8z"/><use href="#st" x="30"/><use href="#st" x="60"/><use href="#st" x="90"/><use href="#st" x="120"/></g></svg>
@@ -462,16 +476,89 @@ i{font-style:normal}
 
   <!-- 07 澤井珈琲 -->
   <section class="sec sec--navy" id="about" data-title="澤井珈琲のこと">
-    <p class="kicker"><b>06</b>澤井珈琲のこと</p>
+    <p class="kicker"><b>07</b>澤井珈琲のこと</p>
     <h2 class="h2">焼き立ての香りを<br>箱ごと届けます</h2>
     <p class="about__t">ご注文をいただいてから焙煎する、焼き立て珈琲専門店です。鳥取の焙煎工場から、銀座・浅草・東京ソラマチなど全国11店舗と同じ味をお届けします。</p>
     <img class="about__img" src="img/ginza.jpg" width="1000" height="1000" alt="銀座で愛されるクリスマスコーヒー" loading="lazy">
     <img class="about__img" src="img/soy2025.jpg" width="1000" height="1000" alt="楽天ショップ・オブ・ザ・イヤー2025 5冠" loading="lazy">
   </section>
 
-  <!-- 08 商品詳細 -->
+  <!-- 08 ほかの贈りもの -->
+  <section class="sec sec--paper" id="lineup" data-title="ほかの冬の贈りもの">
+    <p class="kicker"><b>08</b>ほかの冬の贈りもの</p>
+    <h2 class="h2">贈る相手にあわせて<br>選べるギフトも</h2>
+    <h3 class="lineup__h"><span>クリスマスに</span></h3>
+    <div class="items">
+        <a class="item" href="https://item.rakuten.co.jp/sawaicoffee-tea/christmas13dripgift/" target="_blank" rel="noopener">
+          <img src="img/items/christmas13dripgift.jpg" width="500" height="500" alt="クリスマス限定 13Drip 2種10袋ギフト" loading="lazy">
+          <p class="item__name">クリスマス限定 13Drip 2種10袋ギフト</p>
+          <p class="item__price"><b>2,970</b>円</p>
+        </a>
+        <a class="item" href="https://item.rakuten.co.jp/sawaicoffee-tea/christmastartegift/" target="_blank" rel="noopener">
+          <img src="img/items/christmastartegift.jpg" width="500" height="500" alt="クリスマスブレンドと ミニタルトのギフト" loading="lazy">
+          <p class="item__name">クリスマスブレンドと ミニタルトのギフト</p>
+          <p class="item__price"><b>2,800</b>円</p>
+        </a>
+        <a class="item" href="https://item.rakuten.co.jp/sawaicoffee-tea/christmaspetitgift-seiya/" target="_blank" rel="noopener">
+          <img src="img/items/christmaspetitgift-seiya.jpg" width="500" height="500" alt="聖夜のプチギフト 2種の珈琲と抹茶スイーツ" loading="lazy">
+          <p class="item__name">聖夜のプチギフト 2種の珈琲と抹茶スイーツ</p>
+          <p class="item__price"><b>600</b>円</p>
+        </a>
+        <a class="item" href="https://item.rakuten.co.jp/sawaicoffee-tea/christmashappymini-5/" target="_blank" rel="noopener">
+          <img src="img/items/christmashappymini-5.jpg" width="500" height="500" alt="スイーツ付き ハッピーバッグミニ 5セット" loading="lazy">
+          <p class="item__name">スイーツ付き ハッピーバッグミニ 5セット</p>
+          <p class="item__price"><b>1,500</b>円</p>
+        </a>
+        <a class="item" href="https://item.rakuten.co.jp/sawaicoffee-tea/dp-xsb50p/" target="_blank" rel="noopener">
+          <img src="img/items/dp-xsb50p.jpg" width="500" height="500" alt="クリスマスブレンド お配りギフト 50袋" loading="lazy">
+          <p class="item__name">クリスマスブレンド お配りギフト 50袋</p>
+          <p class="item__price"><b>3,810</b>円</p>
+        </a>
+        <a class="item" href="https://item.rakuten.co.jp/sawaicoffee-tea/dp-xsc50p/" target="_blank" rel="noopener">
+          <img src="img/items/dp-xsc50p.jpg" width="500" height="500" alt="13Drip クリスマス2種 おすそ分け袋付き 50袋" loading="lazy">
+          <p class="item__name">13Drip クリスマス2種 おすそ分け袋付き 50袋</p>
+          <p class="item__price"><b>4,480</b>円</p>
+        </a>
+    </div>
+    <h3 class="lineup__h"><span>お歳暮・冬のご挨拶に</span></h3>
+    <div class="items">
+        <a class="item" href="https://item.rakuten.co.jp/sawaicoffee-tea/dp-hanagift/" target="_blank" rel="noopener">
+          <img src="img/items/dp-hanagift.jpg" width="500" height="500" alt="珈琲物語・華 本型のドリップギフト 4種20袋" loading="lazy">
+          <p class="item__name">珈琲物語・華 本型のドリップギフト 4種20袋</p>
+          <p class="item__price"><b>4,000</b>円</p>
+        </a>
+        <a class="item" href="https://item.rakuten.co.jp/sawaicoffee-tea/6dripassortgift/" target="_blank" rel="noopener">
+          <img src="img/items/6dripassortgift.jpg" width="500" height="500" alt="ドリップバッグ飲み比べ 6種24袋ギフト" loading="lazy">
+          <p class="item__name">ドリップバッグ飲み比べ 6種24袋ギフト</p>
+          <p class="item__price"><b>2,980</b>円</p>
+        </a>
+        <a class="item" href="https://item.rakuten.co.jp/sawaicoffee-tea/dp-variety/" target="_blank" rel="noopener">
+          <img src="img/items/dp-variety.jpg" width="500" height="500" alt="化粧缶入り ドリップバッグ 世界の珈琲10種" loading="lazy">
+          <p class="item__name">化粧缶入り ドリップバッグ 世界の珈琲10種</p>
+          <p class="item__price"><b>3,500</b>円</p>
+        </a>
+        <a class="item" href="https://item.rakuten.co.jp/sawaicoffee-tea/ac-gift-can-red/" target="_blank" rel="noopener">
+          <img src="img/items/ac-gift-can-red.jpg" width="500" height="500" alt="珈琲樽の ドリップコーヒーギフト 40袋" loading="lazy">
+          <p class="item__name">珈琲樽の ドリップコーヒーギフト 40袋</p>
+          <p class="item__price"><b>3,000</b>円</p>
+        </a>
+        <a class="item" href="https://item.rakuten.co.jp/sawaicoffee-tea/coffeegift200705/" target="_blank" rel="noopener">
+          <img src="img/items/coffeegift200705.jpg" width="500" height="500" alt="氷温甘熟珈琲 ドリップバッグ6箱ギフト" loading="lazy">
+          <p class="item__name">氷温甘熟珈琲 ドリップバッグ6箱ギフト</p>
+          <p class="item__price"><b>4,000</b>円</p>
+        </a>
+        <a class="item" href="https://item.rakuten.co.jp/sawaicoffee-tea/210406/" target="_blank" rel="noopener">
+          <img src="img/items/210406.jpg" width="500" height="500" alt="木樽入り ブルーマウンテン 2樽セット" loading="lazy">
+          <p class="item__name">木樽入り ブルーマウンテン 2樽セット</p>
+          <p class="item__price"><b>6,500</b>円</p>
+        </a>
+    </div>
+    <p class="lineup__note">※価格は11月23日時点の税込価格です。送料は商品ごとに異なります。<br>※1,000円OFFクーポンはブック型ギフトを2セットご購入の場合が対象です。</p>
+  </section>
+
+  <!-- 09 商品詳細 -->
   <section class="sec" id="detail" data-title="商品詳細・ご注意">
-    <p class="kicker"><b>07</b>商品詳細</p>
+    <p class="kicker"><b>09</b>商品詳細</p>
     <h2 class="h2">聖夜を彩る<br>3種のドリップギフト</h2>
     <table class="spec">
       <tr><th>価格</th><td>3,500円(税込・送料無料)</td></tr>
