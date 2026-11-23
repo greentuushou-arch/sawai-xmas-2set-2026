@@ -31,18 +31,20 @@ i{font-style:normal}
 .ttl em{font-style:normal;color:var(--gold-l)}
 
 /* クーポン札 */
-.tk{position:relative;background:var(--paper);color:var(--red);text-align:center;border-radius:6px;white-space:nowrap}
-.tk::before{content:"";position:absolute;border:1.5px solid var(--gold);border-radius:3px;pointer-events:none}
-.tk__pre{font-family:var(--min);font-weight:800;color:var(--ink);letter-spacing:.08em}
-.tk__pre b{font-family:var(--num);font-weight:600;color:var(--red)}
+.tk{position:relative;background:linear-gradient(160deg,#c3303d,#a8232e 45%,#7f1720);color:#fff;text-align:center;border-radius:6px;white-space:nowrap;box-shadow:0 10px 30px #0008,0 0 0 4px var(--gold)}
+.tk::before{content:"";position:absolute;border:2px solid var(--gold-l);border-radius:3px;pointer-events:none}
+.tk__pre{font-family:var(--min);font-weight:800;color:#fff;letter-spacing:.08em}
+.tk__pre b{font-family:var(--num);font-weight:600;color:var(--gold-l)}
 .tk__row{display:flex;align-items:center;justify-content:center}
+.tk .off{color:#fff}
+.tk .off__u .y,.tk .off__u .o{color:var(--gold-l)}
 .off{display:inline-flex;align-items:center;line-height:1}
 .off>b{font-family:var(--num);font-weight:600;font-size:1em;line-height:.8;letter-spacing:-.02em}
 .off__u{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:.04em;margin-left:.05em}
 .off__u i{display:block;line-height:.9}
 .off__u .y{font-family:var(--sans);font-weight:900;font-size:.5em;line-height:1}
 .off__u .o{font-family:var(--num);font-weight:700;font-size:.4em;letter-spacing:.02em}
-.tk__c{font-weight:900;letter-spacing:.04em}
+.tk__c{font-weight:900;letter-spacing:.04em;color:var(--gold-l)}
 
 /* ===== 1600x900 ===== */
 .s900{width:1600px;height:900px}
@@ -77,7 +79,7 @@ i{font-style:normal}
 .s311 .times{display:flex;justify-content:space-between;width:100%;max-width:420px;margin-top:4px;padding:0 14px}
 .s311 .times span{font-family:var(--num);font-weight:500;font-size:24px;color:var(--gold-l);letter-spacing:.04em}
 .s311 .ttl{margin-top:8px;font-size:32px}
-.s311 .tk{position:absolute;z-index:2;right:40px;top:calc(50% + 15px);transform:translateY(-50%);padding:18px 28px 16px}
+.s311 .tk{position:absolute;z-index:2;right:44px;top:calc(50% + 15px);transform:translateY(-50%);padding:18px 28px 16px;box-shadow:0 6px 18px #0008,0 0 0 3px var(--gold)}
 .s311 .tk::before{inset:8px}
 .s311 .tk__pre{font-size:25px}.s311 .tk__pre b{font-size:40px;margin:0 .06em;vertical-align:-.06em}
 .s311 .tk__row{margin-top:6px}
